@@ -12,37 +12,44 @@ Writing code under pressure is hard!
 - no more need for poetry, pip-tools, twine etc
 
 
-# Security Checks in Python CI Pipelines
+## Security Checks in Python CI Pipelines
 
 There's a lot of easy stuff we can all do to raise the bar
 
 
-# GIL removal
+## GIL removal
 
 - requires that the Python interpreter does lots of additional accounting
 - Steering Commitee condition that it there's isn't too much single thread performance lost by removing the GIL
 
 
-# Immortal objects in Python 3.12
+## Immortal objects in Python 3.12
 
 - Avoid reference counting and garbage collection accounting for immutable objects
   * `None`, `True`, `False`, integers from -5 to 255
 - Avoid unnecessary CPU cache invalidation
 - Less private memory use when forking processes; avoids copy-on-write (COW) for immutable objects
 
-# arrow
+## arrow
 
 - Functionality of datetime + timedelta + zoneinfo + pytz + dateutil etc with one consist API
 - https://arrow.readthedocs.io/en/latest/
 
-# Melbourne Runaway Train
+## Melbourne Runaway Train
 
 Amazing talk!
 
 
-# ruamel.yaml
+## ruamel.yaml
 
 - Round trip YAML preserving layout and comments
 - https://yaml.readthedocs.io/en/latest/detail/
+
+## beeware
+
+- Deploy Python apps everywhere
+  * Linux, MacOS, Windows, iOS, Android, web
+- Native UI controls
+- https://beeware.org/  
 
 **All talks coming to YouTube soon**
